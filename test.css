@@ -153,6 +153,18 @@ footer nav ul li a:hover{
 /*fin index*/
 
 /********MAIN*******/
+@media all and (max-width: 1080px) {
+    main.cv {
+      flex-wrap: wrap !important;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    main.cv ul {
+      flex-direction: row;
+    }
+  }
+
 main.cv {
   display: flex;
   gap: 10px;
@@ -172,6 +184,8 @@ main.cv article {
   padding-left: 15px;
   background-color: var(--my-nav);
   padding: 1%;
+  margin: 1%;
+  box-shadow: var(--my-nav-shadow) 3px 3px 3px;
 }
 
 /*Aside*/
@@ -181,7 +195,7 @@ main.cv aside {
   min-width: 400px;
   max-width: 400px;
   align-items: center;
-  background-color: rgb(252, 251, 248);
+  background-color: var(--my-nav);
   /*border: thick double #221546;
     border-radius: 15px;*/
   border-radius: 10px;
@@ -190,6 +204,12 @@ main.cv aside {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--my-nav-shadow) 3px 3px 3px;
+}
+
+main.cv aside img{
+    width: 50%;
+    margin: 1em 5em;
 }
 
 /***********Me connaitre ***************/
@@ -516,6 +536,10 @@ main aside section div.s13_capture img{
     padding: 0px;
   }
 
+#placeholder{
+    visibility: hidden;
+    display: none;
+}
 
 /*Fin projet text*/
   /*changer dans le future*/
