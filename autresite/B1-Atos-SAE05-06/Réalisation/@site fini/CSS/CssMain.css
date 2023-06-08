@@ -1,0 +1,43 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px auto;
+    background-color: rgb(223,230,237) ;
+}
+
+header, footer{
+    width: 100%;
+    margin: auto;
+}
+
+main {
+    min-height: 620px;
+    max-width: 2024px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+p{
+    text-align: justify;
+}
+
+div.portfolio a{
+    padding: 10px;
+    background-color: #0596ff;
+    border: 1px solid #0596ff;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    bottom: 2%;
+    left: 90%;
+}
+
+div.portfolio a:hover{
+    background-color: #0e74bd;
+    color: rgb(226, 226, 226);
+    border-color: #0961a0;
+    
+}
+
+
+

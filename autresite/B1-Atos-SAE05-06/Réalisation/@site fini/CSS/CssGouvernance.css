@@ -1,0 +1,78 @@
+main{
+    text-align: center;
+    width: 1024px;
+}
+main section{
+    width: 1024px;
+    margin:auto;
+    background: linear-gradient(lightskyblue, rgb(209, 210, 210));
+    border-radius: 0px 100px / 120px ;
+}
+
+main div.directeur figure img.GrandeIcone{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgb(2 2 5 / 49%);
+}
+
+main div figure img.PetiteIcone{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgba(2, 2, 5, 0.486) ;
+}
+
+main div figure.grandeFleche img{
+    margin: 0px 70px;
+    width: 800px;
+}
+
+main div figure.PetiteFleche{
+    height: 75px;
+    margin: 0px;
+    padding: 0px;
+}
+
+main div.directeur{
+    display: flex;
+    justify-content: center;
+}
+
+main aside{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 21.44px;
+}
+
+main aside div{
+    text-align: center;
+    width: 256px ;
+}
+
+main aside div h2{
+    height: 80px;
+}
+
+main div.Regions{
+    display: flex;
+    flex-direction: column;
+    border-right: solid black 1px;
+}
+
+main div.LignesDeMetier{
+    display: flex;
+    flex-direction: column;
+    border-right: solid black 1px;
+}
+
+main div.CentreDexellenceCommerciale{
+    display: flex;
+    flex-direction: column;
+    border-right: solid black 1px;
+}
+
+main div.FonctionSupport{
+    display: flex;
+    flex-direction: column;
+}

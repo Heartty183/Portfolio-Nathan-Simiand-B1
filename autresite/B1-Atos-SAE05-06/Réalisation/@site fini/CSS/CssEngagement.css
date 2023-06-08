@@ -1,0 +1,81 @@
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1120px;
+}
+
+main h1{
+    text-align: center;
+}
+
+main article:nth-child(2){
+    max-width: fit-content;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+main article:nth-child(2) section{
+    align-items: center;
+}
+
+main article:nth-child(2) section div p{
+    margin-right: 50px
+}
+
+main article:nth-child(2) section:first-child{
+    display: flex;
+    flex-direction: row;
+}
+
+main article:nth-child(2) section:first-child img{
+    width: 350px;
+    background-color: #0096fe;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+main article:nth-child(2) section:nth-child(2){
+    margin-top: 50px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main article:nth-child(2) section:nth-child(2) img{
+    width: 200px;
+    margin-right: 60px;
+}
+
+article section {
+    flex-direction: row-reverse;
+}
+
+main article:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 70px 50px 70px;
+    margin: 50px 130px 150px 130px;
+    background-color: white;
+    border-radius: 30px;
+    border: solid;
+}
+
+main article:nth-child(3) section{
+    display: flex;
+    justify-content: left;
+    max-width: 900px;
+    align-items: center;
+}
+
+main article:nth-child(3) section div{
+    padding: 30px;
+}
+
+
+main article:nth-child(3) section div img{
+    width: 140px;
+    border-radius: 50%;
+    background-color: #0096fe;
+}

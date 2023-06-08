@@ -1,0 +1,26 @@
+main{
+    max-width: 1024px !important;
+}
+
+main h1{
+    text-align: center;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+main div img{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(2, 2, 5, 0.486) ;
+}
+
+main h2{
+    text-align: center;
+}
+
+

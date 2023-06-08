@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Atos | Contact</title>
+    <link rel="stylesheet" href="../CSS/CSSHeaderFooter.css">
+    <link rel="stylesheet" href="../CSS/CssMain.css">
+    <link rel="stylesheet" href="../CSS/CssContact.css">
+</head> 
+<body>
+    <header>
+      <nav>
+        <a href="Acceuil.html">
+          <img src="../../img/logo/Atos_full_logo.png" alt="logo-atos" class="logo"></a>
+        <ul>
+          <li><a href="Acceuil.html">Accueil</a></li>
+          <li class="deroulant">
+            <a href="#">Secteur&darr;</a>
+              <div class="deroulant-contenue">
+                <a href="Secteur_d'activite.html">Secteur d'activite</a>
+                <a href="Activites.html">Activités</a>
+                <a href="Services.html">Services</a>
+              </div>
+          </li>
+          <li><a href="Clients.html">Clients</a></li>
+          <li><a href="Partenaires.html">Partenaires</a></li>
+          <li><a href="Engagement.html">Engagement</a></li>
+          <li><a href="Gouvernance.html">Gouvernance</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Nous Contacter</h1>
+        <hr>
+      </section>
+      <section>
+        <article>
+          <form action="traitement.php" method="post">
+            <h2 class="titre">Votre demande</h2>
+            <hr>
+            <div>
+              <label for="requete">Votre requête :</label>
+              <select id="requete" name="requete">
+                  <option value="Séléctionner" selected>Sélectionner</option>
+                  <option value="Renseignement">Demande de renseignement sur nos solution ou services</option>
+                  <option value="Recrutement">Recrutement/Stage/Alternance</option>
+                  <option value="press">Presse</option>
+                  <option value="Problème">Signaler un problème de sécurité</option>
+                  <option value="Autre">Autre</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="commentaire">Comment pouvons-nous vous aider.</label>
+              <textarea id="commentaire" name="commentaire" placeholder=""></textarea>
+            </div>
+
+            <div>
+              <label for="nom">Nom :</label>
+              <input id="nom" type="text" name="nom" placeholder="votre nom">
+            </div>
+
+            <div>
+              <label for="nom">Prénom :</label>
+              <input id="Prénom" type="text" name="Prénom" placeholder="votre prénom">
+            </div>
+
+            <div>
+              <label for="email">E-mail :</label>
+              <input id="email" type="email" name="email" placeholder="votre adresse mail" required>
+            </div>
+            
+            <p>
+              <input id="bouton_bleu" type="submit" value="Envoyez">
+            </p>
+
+          </form>
+        </article>
+
+        <article>
+          <div>
+            <h2>Siège social en France</h2>
+            <hr>
+            <p>River Ouest, 80 quai Voltaire
+            95877 Bezons cedex - France
+            +33 1 73 26 00 00</p>
+            <img src="../../img/Contact/atos-headquarters.jpg" alt="maison mère atos">
+            <br><br>
+            <a class="bouton_bleu" href="Implantation.html"> implantation &rsaquo;</a>
+          </div>
+        </article>
+      </section>
+      <div class="portfolio">
+            <a href="../../../../../mes-projets-texte.html#1s5">Retour portfolio</a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="Acceuil.html">
+                <img src="../../img/logo/atos_logo.png" alt="logo de atos">
+            </a>
+            <nav>
+              <ul>
+                  <li><a href="Acceuil.html">Accueil</a></li>
+                  <li><a>Secteur</a>
+                          <ul>
+                              <li><a href="Secteur_d'activite.html">Secteur d'activite</a></li>
+                              <li><a href="Activites.html">Activités</a></li>
+                              <li><a href="Services.html">Services</a></li>
+                          </ul>
+                  </li>
+                  <li><a href="Clients.html">Clients</a></li>
+                  <li><a href="Partenaires.html">Partenaires</a></li>
+                  <li><a href="Engagement.html">Engagement</a></li>
+                  <li><a href="Gouvernance.html">Gouvernance</a></li>
+              </ul>
+          </nav>
+        </div>
+      <a id="Contact" href="Contact.html">Nous contacter</a>
+      <a id="top" href="#"> Retour en haut ↑</a>
+  </footer>
+</body>
+</html>

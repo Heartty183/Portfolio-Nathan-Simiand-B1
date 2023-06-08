@@ -1,0 +1,626 @@
+:root{
+    --my-background : linear-gradient(170deg,#048b9a,#6b8e92);
+    --my-nav : #96c3ca;
+    --my-nav-shadow: #8ab7be;
+    --my-a : #445353;
+    --my-a-hover : #2e006c;
+}
+
+body {   
+    background: var(--my-background);
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Dosis', sans-serif;
+    background-repeat: no-repeat;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: var(--my-nav);
+    min-width: 60%;
+    position:absolute;
+    right: 20px;
+    border-radius: 15px;
+    padding: 0px;
+    margin: 5px;
+    z-index: 10;
+    box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+}
+
+header nav ul li{
+    padding: 1%;
+    width: 25%;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--my-a);
+    padding: 2%;
+    font-size: 1.8em;
+}
+
+header nav ul li a:hover{
+    color: var(--my-a-hover);
+}
+header nav li.dropDownProjet{
+    position: relative;
+}
+
+header nav li div.dropDownProjetContenue{
+    display: none;
+    position: absolute;
+    z-index: 20;
+    box-shadow: 4px 3px 3px #898989;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--my-nav);
+    top: 100%;
+    width: 100%;
+    height: 90%;
+    box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+}
+
+header nav li.dropDownProjet:hover div.dropDownProjetContenue{
+    display: block;
+}
+
+header nav ul #actif {
+    color: var(--my-a-hover);
+}
+
+header nav ul #actif:hover{
+    color: var(--my-a)
+}
+
+main div.header{
+    height: 80px;
+}
+
+main h1#presentation{
+    font-size: 3em;
+}
+
+main h1#presentation + h2{
+    font-size: 2em;
+    margin-left: 48%;
+}
+
+main .box-pages{
+    display: flex ;
+    width: 100%;
+    justify-content: space-around;
+}
+
+main .pages{
+    margin: 0px 2%;
+    padding: 2%;
+    border-radius: 15px;
+    background-color: var(--my-nav);
+    border: 2px solid var(--my-a);
+    box-shadow: var(--my-nav-shadow) 5px 5px 80px;
+    text-decoration: none;
+}
+
+
+
+
+main div.elementImportant{
+    text-align: center;
+    position: relative;
+    background-color: var(--my-nav);
+    border-radius: 15px;
+    height: 615px;
+    width: 470px;
+    margin: 10% 15% 10% 5%;
+}
+
+
+
+footer{
+    margin-top: 2%;
+    position: relative;
+    min-width: 30%;
+    bottom: 20px;
+}
+
+footer nav ul{
+    display: flex;
+    padding: 0px;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: var(--my-nav);
+    border-radius: 15px;
+    box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+}
+
+footer nav ul li{
+    list-style: none;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: var(--my-a);
+    margin: 0px 15px;
+    font-size: 2em;
+}
+
+footer nav ul li a:hover{
+    color: var(--my-a-hover);
+}
+
+/*fin idex*/
+
+/*debut projet*/
+
+/*nav projet*/
+
+main.Projet label#checkNavLab{
+    width: 8%;
+    height: 5%;
+    position: fixed;
+    background-color: var(--my-nav);
+    border-radius: 15px;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    user-select: none;
+    border: 0.3em solid var(--my-nav-shadow);
+    box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+}
+
+main.Projet label#checkNavLab p{
+    margin: 0px;
+}
+
+main input{
+    display: none;
+}
+
+main.Projet #checkNav:checked ~ aside.minimenu{
+    display: none;
+}
+
+main.Projet #checkNavLab p::before{
+    content: "Cacher accès rapide";
+}
+
+main.Projet #checkNav:checked ~ #checkNavLab p::before{
+    content: "Afficher accès rapide";
+}
+
+main.Projet aside{
+    margin: 1em;
+}
+
+main.Projet aside.minimenu{
+    display: inline;
+    width: max-content;
+    min-width: 30%;
+    padding: 1% 2%;
+    border-radius: 15px;
+}
+
+main ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+main aside section.minimen{
+    top : 30px;
+    position: sticky;
+    background-color: var(--my-nav);
+    width: 100% !important;
+    height: min-content;
+    padding: 0% 0% 1% 1% !important ;
+    border-radius: 15px;
+    box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+}
+
+main aside ul li div.accordeon p{
+    bottom: 0px;
+    left: -25px;
+    margin: 0px;
+}
+   
+main aside ul li div.accordeon ul{
+    padding-left: 0px;
+}
+   
+main aside ul div.accordeon{
+    position: relative;
+}
+   
+main aside ul div.accordeon .btnsize {
+    display: none;
+}
+   
+main aside ul div.accordeon .contenue_accordeon{
+    display: none;
+    margin-left: 10px;
+}
+
+main aside ul div.accordeon label:hover > p{
+    text-decoration: underline;
+}
+   
+main aside ul div.accordeon .btnsize:checked + label > .contenue_accordeon{
+    text-align: center;
+    color: rgba(40, 40, 40, 0.9);
+    display: block;
+}
+   
+main aside ul div.accordeon .contenue_accordeon ul{
+    list-style:none;
+    margin-block: 0px;
+    padding: 0px;
+}
+   
+main aside ul div.accordeon p{
+    text-align: center;
+}
+   
+main aside ul li div.accordeon div.contenue_accordeon ul li a.lien_rapide{
+    color:rgba(0,0,0,.9);
+    text-decoration: none;
+}
+   
+main aside ul li div.accordeon div.contenue_accordeon ul li a.lien_rapide:hover{
+    text-decoration: underline;
+}
+
+main aside ul li div.accordeon a{
+    text-decoration: none;
+    color: black;
+}
+
+main aside ul li div.accordeon a:hover{
+    text-decoration: underline;
+    color: #ff6f7d;
+}
+
+   /*fin nav projet*/
+   /*debut projet*/
+main.Projet{
+    display: flex;
+}
+
+main.Projet aside div.header + section article div#ProjetText{
+    background-color: var(--my-nav);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 15px;
+    box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+}
+
+main aside section h3{
+    text-align: center;
+}
+  
+main aside section div.contenue_an{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 1180px;
+    background-color: var(--my-nav);
+    border-radius: 15px;
+    box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+}
+
+main aside section div.contenue_an div{
+    position: relative;
+    margin: 20px;
+    border-radius: 15px;
+}
+  
+main aside section div.contenue_an div img{
+    border-radius: 5%;
+    width: 293px ;
+    height: 100%;
+}
+  
+main aside section div.contenue_an div aside{
+    position: absolute;
+    background-color: black;
+    padding: 1em;
+    border : 1px solid black;
+    bottom: -16px;
+    left: -16px;
+    width: 88.5%;
+    border-radius: 0px 0px 11px 11px ;
+    opacity: 50%;
+    height: 30px;
+}
+  
+main aside section div.contenue_an div a:hover > aside{
+    opacity: 90%;
+}
+  
+main aside section div.contenue_an div p{
+    position: absolute;
+    bottom: -10px;
+    left: 2%;
+    text-align: center;
+    width: 280px;
+    color: white;
+}
+  
+main aside section div.s13_capture{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+  
+main aside section div.s13_capture img{
+    width: 300px;
+    margin: 0px;    
+    padding: 0px;
+  }
+
+
+/*Fin projet text*/
+  /*changer dans le future*/
+#future{
+    visibility: hidden;
+    display: none;
+}
+  /*fin projet*/
+  /*CV*/
+main aside section#cv{
+    margin: 0px 5%;
+}  
+
+main aside section.en-tete{
+    display: flex;
+    
+}
+
+main aside section.en-tete div.en-tete_info{
+    background-color: var(--my-nav);
+    margin-left: 5%;
+    border-radius: 15px;
+    padding: 0px 1%;
+    box-shadow: 5px 5px 10px  var(--my-nav-shadow);
+}
+
+main aside section.en-tete:nth-child(1) h1 {
+    font: italic 2em "Fira Sans", serif;
+    margin: 2.2em;
+}
+
+main aside section div.Arrow{
+    width: 30%;
+    background-color: var(--my-nav);
+    display: flex;
+    position: relative;
+    box-shadow: 5px 5px 10px  var(--my-nav-shadow);
+    margin-top: 2%;
+}
+
+
+main aside section div.text_cv{
+    margin-bottom: 3%;
+}
+
+main aside section div.Arrow h2{
+    font-size: 100%;
+    margin-left: 5%;
+}
+
+main aside section div.Arrow div.bare_separation{
+    border-bottom: var(--my-nav) 5px solid;
+    width: 200%;
+    display: table-cell;
+    height: 2px;
+    position: absolute;
+    bottom: 50%;
+    left: 110%;
+}
+
+main section#cv div.text_cv div#affichage_cv{
+    display: flex;
+}
+
+main section#cv div.text_cv div#affichage_cv :first-child{
+    margin-right: 20px;
+}
+
+main section#cv div.text_cv div#affichage_cv a {
+    color: var(--my-a);
+    text-decoration: underline;
+}
+
+main section#cv div.text_cv div#affichage_cv a:hover {
+    color: #ff6f7d;
+}
+
+
+
+  /*Fin cv*/
+  /*Responsive*/
+
+  @media (max-width: 640px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+    header nav ul{
+        max-width: 50% !important;
+    }
+
+    header nav ul li a, footer nav ul li a, main.Projet section.minimen, main div div.nom{
+        font-size: small;
+    }
+
+    body main label#checkNavLab p{
+        font-size: 7px;
+    }
+    
+
+    main div.presentation div.imgMoi, main div.presentation div.elementImportant{
+        margin: 2.5%;
+    }
+
+    main div.presentation div.imgMoi img{
+        width: 100%;
+        height: auto;
+    }
+	
+    main div.presentation div.elementImportant{
+        width: 50%;
+        height: auto;
+    }
+
+    main.Projet aside section div img#s13_1{
+        margin-left: 0px;
+    }
+
+    main.Projet aside section article div.s13_capture img:hover, main.Projet aside section div img#s13_1:hover{
+        transform: scale(1);
+    }
+    
+    main.Projet aside section div.contenue_an div aside{
+        width: 100%;
+    }
+    main.Projet aside section div.contenue_an div aside p {
+        width: 100%;
+       font-size: 12px;
+    }
+
+    main.Projet #checkNavLab p::before{
+        content: "Cacher";
+    }
+    
+    main.Projet #checkNav:checked ~ #checkNavLab p::before{
+        content: "Afficher";
+    }
+    
+    main.Projet label#checkNavLab{
+        border: 1px solid var(--my-nav-shadow);
+        box-shadow: var(--my-nav-shadow) 1px 1px 1px ;
+    }
+    main aside section.en-tete:nth-child(1) h1 {
+        font-size: medium;
+    }
+
+    main aside section.en-tete div.en-tete_info {
+        font-size: small;
+    }
+
+    main aside section div.Arrow {
+        font-size: small;
+        width: 50%;
+    }
+
+    main aside section div.Arrow div.bare_separation {
+        width: 100%;
+    }
+
+    main aside section#cv p{
+        font-size: small;
+    }
+
+    main.Projet aside.minimenu{
+        display: none;
+    }
+
+    main aside section div.contenue_an {
+        display: block;
+    }
+
+    main aside section div.contenue_an div aside {
+        bottom: -13px;
+    }
+    
+    
+    footer nav ul{
+        width: 100%;
+    }
+
+
+	/* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
+
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video {
+		max-width: 100%;
+	}
+	
+	/* conserver le ratio des images */
+
+	img {
+		height: auto;
+	}
+	
+	/* gestion des mots longs */
+
+	textarea,
+	table,
+	td,
+	th,
+	code,
+	pre,
+	samp {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+	
+	code,
+	pre,
+	samp {
+		white-space: pre-wrap; /* passage à la ligne spécifique pour les éléments à châsse fixe */
+	}
+	
+	/* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */
+
+	.element1,
+	.element2 {
+		float: none;
+		width: auto;
+	}
+	
+	/* masquer/afficher les éléments  */
+
+	.u-mobile {          
+        display: block;          
+        display: revert !important; /* affichage des éléments */        }        .u-no-mobile {          display: none !important; /* masquage des éléments */        }
+	
+	/* Un message personnalisé */
+
+	body:before {
+		content: "Version mobile du site";
+		display: block;
+		text-align: center;
+		font-style: italic;
+		color: #777;
+	}
+}
+
+@media (max-device-width:768px) and (orientation: landscape) {
+    html {
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+    }
+  }

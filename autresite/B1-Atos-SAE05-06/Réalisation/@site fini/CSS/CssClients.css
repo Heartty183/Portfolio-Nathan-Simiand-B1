@@ -1,0 +1,55 @@
+main{
+    max-width: 75% !important;
+}
+
+main h1{
+    text-align: center;
+}
+
+main section{
+    margin: 4em 0px;
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(209, 210, 210);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+main section img{
+    width: 300px;
+    height: 150px;
+    border-radius: 100%;
+    margin: auto 0px;
+}
+
+main section:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+}
+
+main section:nth-child(odd) div p{
+    text-align: left;
+    margin-top: 5px;
+    margin-right: 1em;
+}
+
+main section:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main section:nth-child(even) div p{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 1em;
+}
+
+
+main section div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section div h2{
+    margin: 0px auto;
+    padding-top: 5px;
+}

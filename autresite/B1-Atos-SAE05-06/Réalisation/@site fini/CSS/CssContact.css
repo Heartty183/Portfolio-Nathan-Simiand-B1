@@ -1,0 +1,101 @@
+main section{
+    text-align: center;
+}
+
+main section:nth-child(2){
+    display:flex;
+    justify-content: center;
+}
+
+main article{
+    margin : auto 1em; 
+}
+
+article:nth-child(2) {
+    background-color: rgb(228, 229, 230);
+    width: 400px;
+    height: 500px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    padding: 16px;
+}
+
+article:nth-child(2) img{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(2, 2, 5, 0.486) ;
+}
+
+article:nth-child(2) .bouton_bleu {
+    padding: 10px;
+    background-color: #0596ff;
+    border: 1px solid #0596ff;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+article:nth-child(2) .bouton_bleu:hover, #bouton_bleu:hover{
+    background-color: #0e74bd;
+    color: rgb(226, 226, 226);
+    border-color: #0961a0;
+}
+
+main article form {
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: rgb(228, 229, 230);
+    color: #1e6dff;
+} 
+
+main article form .titre {
+    color: black;
+}
+
+main article form div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+  
+main article form div + div {
+    margin-top: 1em;
+}
+
+main form label {
+    display: block;
+    width: 100%;
+    text-align:left;
+}
+
+main article form select, main article form input, main article form textarea{
+    border-radius: 15px;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    display: block;
+    background-color: white;
+}
+
+main article form div input, main article form div textarea, main article form select{
+    border: 1px solid #0596ff;
+}
+  
+main article form textarea{
+    height: 5em;
+}
+
+main article form p{
+    display: flex;
+    justify-content: center;
+}
+
+main article form p input{
+    color : white;
+    border: none;
+    background-color: #0596ff;
+    margin-left: .5em;
+    align-items: center;
+    width: 300px;
+  }

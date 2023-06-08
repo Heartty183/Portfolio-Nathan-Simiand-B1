@@ -1,0 +1,129 @@
+
+section:nth-child(1){
+    position: relative;
+}
+
+main{
+    margin-top: 0;
+}
+
+section{
+    margin-bottom: 50px !important;
+}
+
+@keyframes arise{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    5%{
+        opacity: 1%;
+        transform: translateY(100px);
+    }
+    50%{
+        opacity: 40%;
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+section:nth-child(1) h1{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    font-weight: bolder;
+    font-size:150px;
+    color: white;
+    z-index: 10;
+    animation: 3s ease-out 0s 1 arise;
+}
+
+section:nth-child(2), section:nth-child(3), section:nth-child(4){
+    width: 1024px;
+    margin: auto;
+}
+
+section:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 0 5px 0;
+    background-color: rgb(178, 203, 248);
+    border-radius: 15px;
+}
+
+section ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    padding: 0;
+}
+
+section li{
+    position: relative;
+}
+
+section a img{
+    border-radius: 10px;
+    filter: brightness(85%);
+}
+
+section a:hover img{
+    filter: brightness(100%);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.699);
+    transition: all 0.1s;
+}
+
+h3{
+    position:absolute;
+    bottom: 0px;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #0064CE;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+section div{
+    position: relative;
+}
+
+section div img{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(2, 2, 5, 0.486) ;
+}
+
+h2{
+    position: absolute;
+    bottom: 0;
+    color:white;
+    width: 100%;
+    text-align: center;
+    margin: 3px 0;
+    padding: 15px 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 15px 15px;
+}
+
+.bouton_bleu {
+    padding: 10px;
+    background-color: #0596ff;
+    border: 1px solid #0596ff;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.bouton_bleu:hover{
+    background-color: #0e74bd;
+    color: rgb(226, 226, 226);
+    border-color: #0961a0;
+}
+

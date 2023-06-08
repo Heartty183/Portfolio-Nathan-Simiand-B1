@@ -1,0 +1,133 @@
+/*header*/
+header nav {
+    display: flex;
+    background-color: rgb(209, 210, 210);
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+header nav .logo {
+    width: 340px;
+    margin-left: 50px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+header nav ul li {
+    height: auto;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: rgba(40, 40, 40, 0.9);
+    text-decoration: none;
+}
+
+header nav li:hover, a:hover {
+    color: #1e6dff;
+}
+
+header nav  #actif{
+    color: #1e6dff;
+    text-decoration: underline;
+}
+
+.deroulant-contenue {
+    display: none;
+    position: absolute;
+    background-color: rgb(209, 210, 210);
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20;
+    border-radius: 10%;
+}
+  
+.deroulant-contenue a {
+    color: rgba(40, 40, 40, 0.9);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.deroulant-contenue a:hover {
+    color:#1e6dff;
+}
+
+.deroulant:hover .deroulant-contenue{
+    display: block;
+}
+
+.deroulant:hover > #actif{
+    color: rgba(40, 40, 40, 0.9);
+    text-decoration: none;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    background-color: rgb(209, 210, 210);
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+footer div{
+    display: flex;
+}
+
+footer img{
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer a{
+    color: rgba(40, 40, 40, 0.9);
+    text-decoration: none;
+}
+
+footer #Contact{
+    margin :0px 150px 0px 150px;
+    padding: 10px;
+    background-color: #0596ff;
+    border: 1px solid #0596ff;
+    border-radius: 15px;
+    color: white;
+}
+footer #Contact:hover{
+    background-color: #0e74bd;
+    color: rgb(226, 226, 226);
+    border-color: #0961a0;
+}
+
+footer #top{
+    margin: 0px 75px;
+    padding: 10px;
+    font-style: italic;
+    border-style: solid;
+    border-radius: 7px;
+    outline: none;
+}
+
+footer nav>ul>li>a {
+    font-weight: bold;
+}
+
