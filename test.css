@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&display=swap');
+
+
 :root{
     --my-background : linear-gradient(170deg,#048b9a,#6b8e92);
     --my-nav : #96c3ca;
@@ -10,7 +17,6 @@ body {
     background: var(--my-background);
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Dosis', sans-serif;
     background-repeat: no-repeat;
 }
 
@@ -21,13 +27,11 @@ header nav ul{
     list-style: none;
     background-color: var(--my-nav);
     min-width: 60%;
-    position:absolute;
-    right: 20px;
     border-radius: 15px;
     padding: 0px;
-    margin: 5px;
-    z-index: 10;
     box-shadow: var(--my-nav-shadow) 5px 5px 5px ;
+    margin-right: 5%;
+    margin-left: 40%;
 }
 
 header nav ul li{
@@ -104,9 +108,6 @@ main .pages{
     text-decoration: none;
 }
 
-
-
-
 main div.elementImportant{
     text-align: center;
     position: relative;
@@ -116,8 +117,6 @@ main div.elementImportant{
     width: 470px;
     margin: 10% 15% 10% 5%;
 }
-
-
 
 footer{
     margin-top: 2%;
@@ -151,7 +150,164 @@ footer nav ul li a:hover{
     color: var(--my-a-hover);
 }
 
-/*fin idex*/
+/*fin index*/
+
+/********MAIN*******/
+main.cv {
+  display: flex;
+  gap: 10px;
+  /*flex-wrap: wrap-reverse;*/
+  width: 95%;
+  margin: 20px;
+  min-height: 700px;
+}
+
+main.cv article {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #405f581c;
+  border-radius: 10px;
+  padding-left: 15px;
+  background-color: var(--my-nav);
+  padding: 1%;
+}
+
+/*Aside*/
+main.cv aside {
+  min-height: 400px;
+  max-height: 500px;
+  min-width: 400px;
+  max-width: 400px;
+  align-items: center;
+  background-color: rgb(252, 251, 248);
+  /*border: thick double #221546;
+    border-radius: 15px;*/
+  border-radius: 10px;
+  flex-wrap: wrap;
+  margin: 15px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/***********Me connaitre ***************/
+
+
+/* === Moi === */
+
+main.cv .moi {
+  display: flex ;
+  justify-content: center;
+}
+
+main.cv .meConnaitre {
+    text-align: center;
+    font-size:35px; 
+    font-weight:300; 
+    color:#222; 
+    letter-spacing:1px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+main.cv .meConnaitre:after,.meConnaitre:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #34c954;
+    border-top: 1px solid #012508;
+    height: 5px;
+    background-color:#849787;
+}
+
+
+/* === HEADING STYLE #3 === */
+
+main.cv .titresMeconnaitre{
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+main.cv .titresMeconnaitre:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+main.cv .titresMeconnaitre:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #333;
+}
+
+/* === Formations === */
+main.cv .formations{
+  margin: 0;
+  width: 60%;
+}
+
+main.cv .datesFormations{
+  font-weight: bold;
+  color: #467ec7;
+  font-size: 20px;
+}
+
+/* === Compétences === */
+
+main.cv .competences{
+  margin: 0;
+}
+
+main.cv .competences li {
+  color: #8d4a30;
+  font-weight: bold;
+}
+
+
+/* === Expériences === */
+main.cv .listeExperiences {
+  display: flex;
+  flex-direction: column;
+}
+
+main.cv .experiences {
+  margin-left: 15px;
+}
+
+main.cv .texteExperiences {
+  margin-left: 35px;
+  font-size: 17px;
+}
+
+main.cv p {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* === Centre intérêts === */
+
+main.cv .texteCentreInterets{
+  margin: 0;
+  margin-left: 10px;
+  width: 60%;
+  font-size: 17px;
+}
 
 /*debut projet*/
 
@@ -203,7 +359,7 @@ main.Projet aside.minimenu{
     border-radius: 15px;
 }
 
-main ul{
+main.Projet ul{
     list-style: none;
     padding-left: 20px;
 }
@@ -287,7 +443,7 @@ main.Projet{
     display: flex;
 }
 
-main.Projet aside div.header + section article div#ProjetText{
+main.Projet aside  section article div#ProjetText{
     background-color: var(--my-nav);
     padding: 1%;
     margin: 1%;
