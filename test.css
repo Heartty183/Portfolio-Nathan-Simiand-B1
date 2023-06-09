@@ -90,9 +90,8 @@ main h1#presentation {
   font-size: 3em;
 }
 
-main h1#presentation + h2 {
-  font-size: 2em;
-  margin-left: 48%;
+main h1#presentation ~ div img{
+  width: 30%;
 }
 
 main .box-pages {
@@ -101,9 +100,10 @@ main .box-pages {
   justify-content: space-around;
 }
 
-main .pages {
-  margin: 0px 2%;
-  padding: 2%;
+main div.box-pages a  {
+  margin: 10% 2%;
+  width: 30%;
+  height: 50%;
   border-radius: 15px;
   background-color: var(--my-nav);
   border: 2px solid var(--my-a);
@@ -111,14 +111,16 @@ main .pages {
   text-decoration: none;
 }
 
-main div.elementImportant {
-  text-align: center;
-  position: relative;
-  background-color: var(--my-nav);
+main div.box-pages  a div.contenue img{
+  width: 70% !important;
+  margin: 10px 15%;
+  margin-bottom: 0px !important;
   border-radius: 15px;
-  height: 615px;
-  width: 470px;
-  margin: 10% 15% 10% 5%;
+}
+
+main div.box-pages a div.contenue  h3{
+  text-align: center;
+  margin: 0px;
 }
 
 footer {
