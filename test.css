@@ -559,6 +559,11 @@ main aside section div.s13_capture img {
   display: none;
 }
 
+main.Projet aside section article div#ProjetText img{
+  width: 60%; 
+  margin:0px 20%;
+}
+
 /*Fin projet text*/
 /*changer dans le future*/
 #future {
