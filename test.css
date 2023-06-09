@@ -354,7 +354,7 @@ main.Projet label#checkNavLab {
   text-align: center;
   user-select: none;
   border: 0.3em solid var(--my-nav-shadow);
-  box-shadow: var(--my-nav-shadow) 5px 5px 5px;
+  box-shadow: var(--my-nav-shadow) 5px 5px 2px;
 }
 
 main.Projet label#checkNavLab p {
