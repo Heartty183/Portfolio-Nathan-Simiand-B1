@@ -90,9 +90,25 @@ main div.header {
 main h1#presentation {
   font-size: 3em;
 }
+main h1#presentation ~ div div.box-pages-images{
+  position: relative;
+}
+main h1#presentation ~ div div.box-pages-images img {
+  width: 95%;
+}
 
-main h1#presentation ~ div img{
-  width: 30%;
+main h1#presentation ~ div div.box-pages{
+  z-index: 1;
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+}
+
+main h1#presentation ~ div div.box-pages a{
+
+  justify-content: space-around;
 }
 
 main .box-pages {
@@ -119,8 +135,8 @@ main div.box-pages a:hover{
 }
 
 main div.box-pages  a div.contenue img{
-  width: 90% !important;
-  margin: 10px 5%;
+  width: 80% !important;
+  margin: 2% 10%;
   margin-bottom: 0px !important;
   border-radius: 15px;
 }
@@ -128,6 +144,7 @@ main div.box-pages  a div.contenue img{
 main div.box-pages a div.contenue  h3{
   text-align: center;
   margin: 0px;
+  padding-bottom: 10%;
 }
 
 footer {
